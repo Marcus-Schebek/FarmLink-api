@@ -1,0 +1,2 @@
+class SaleAnimal < ApplicationRecord
+end

@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_animal: 1
+  date_heat: 2025-08-13
+  observation: MyText
+
+two:
+  id_animal: 1
+  date_heat: 2025-08-13
+  observation: MyText

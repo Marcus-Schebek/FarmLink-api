@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sale_date: 2025-08-13
+  total_value: 9.99
+  payment_method: MyString
+  id_seller: 1
+  id_buyer: 1
+
+two:
+  sale_date: 2025-08-13
+  total_value: 9.99
+  payment_method: MyString
+  id_seller: 1
+  id_buyer: 1

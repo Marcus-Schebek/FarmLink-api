@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aliment_type: MyString
+  cost_kg: 9.99
+  nutrients: MyText
+
+two:
+  aliment_type: MyString
+  cost_kg: 9.99
+  nutrients: MyText

@@ -1,0 +1,14 @@
+Attaching to demo-web-1, demo-postgres-16.9
+demo-postgres-16.9  | 
+demo-postgres-16.9  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+demo-postgres-16.9  | 
+demo-web-1          | => Booting Puma
+demo-web-1          | => Rails 8.1.0.alpha application starting in production 
+demo-web-1          | => Run `bin/rails server --help` for more startup options
+demo-web-1          | Exiting
+[Kdemo-web-1 exited with code 1
+Gracefully Stopping... press Ctrl+C again to force
+[K Container backend-demo-web-1  [32mStopping[0m
+[K Container backend-demo-web-1  [32mStopped[0m
+[K Container demo-postgres-16.9  [32mStopping[0m
+[K Container demo-postgres-16.9  [32mStopped[0m

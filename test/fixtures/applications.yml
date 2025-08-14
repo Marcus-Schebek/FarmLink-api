@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  application_date: 2025-08-13
+  notes: MyText
+  id_animal: 1
+  id_medicine: 1
+
+two:
+  application_date: 2025-08-13
+  notes: MyText
+  id_animal: 1
+  id_medicine: 1

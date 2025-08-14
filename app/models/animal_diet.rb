@@ -1,0 +1,2 @@
+class AnimalDiet < ApplicationRecord
+end

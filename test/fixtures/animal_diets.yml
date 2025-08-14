@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_animal: 1
+  id_diet: 1
+  date_beginning: 2025-08-13
+  date_end: 2025-08-13
+  daily_quantity: 9.99
+
+two:
+  id_animal: 1
+  id_diet: 1
+  date_beginning: 2025-08-13
+  date_end: 2025-08-13
+  daily_quantity: 9.99

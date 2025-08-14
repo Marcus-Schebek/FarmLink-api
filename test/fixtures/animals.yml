@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ear_tag: MyString
+  breed: MyString
+  sex: MyString
+  birth_date: 2025-08-13
+  current_weight: 9.99
+  status: MyString
+  production_objective: MyString
+  lot: one
+  id_owner: 1
+
+two:
+  ear_tag: MyString
+  breed: MyString
+  sex: MyString
+  birth_date: 2025-08-13
+  current_weight: 9.99
+  status: MyString
+  production_objective: MyString
+  lot: two
+  id_owner: 1
