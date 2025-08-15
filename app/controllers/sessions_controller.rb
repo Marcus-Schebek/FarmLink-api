@@ -1,10 +1,5 @@
 class SessionsController < ApplicationController
-<<<<<<< HEAD
-  skip_before_action :require_login, only: [:create, :destroy]
-=======
   skip_before_action :login_request, only: [:create, :destroy]
-
->>>>>>> c04cca8 (Feature: Add a JWT auth on app)
   def create
     user = AppUser.find_by(email: params[:email])
     if user && user.authenticate(params[:password])

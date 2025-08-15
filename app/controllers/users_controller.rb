@@ -1,10 +1,5 @@
 class UsersController < ApplicationController
-<<<<<<< HEAD
-  skip_before_action :require_login, only: [:create]
-=======
   skip_before_action :login_request, only: [:create]
-
->>>>>>> c04cca8 (Feature: Add a JWT auth on app)
   def create
     user = AppUser.new(user_params)
     if user.save
