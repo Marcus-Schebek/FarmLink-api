@@ -1,6 +1,6 @@
 class AnimalsController < ApplicationController
   before_action :set_animal, only: %i[ show update destroy ]
-  skip_before_action :authorize_request, only: [:index, :show]
+
 
   # GET /animals
   def index
