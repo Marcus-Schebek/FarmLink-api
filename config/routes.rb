@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get "sessions/create"
-  get "sessions/destroy"
   get "users/create"
   resources :animal_diets
   resources :applications
