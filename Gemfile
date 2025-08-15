@@ -21,6 +21,7 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 #gem "solid_cable"
 
 gem 'bcrypt', '~> 3.1.7'
+gem 'jwt'
 gem 'image_processing', '~> 1.2'
 
 
@@ -51,4 +52,7 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  #Env variables for development and test environments
+    gem 'dotenv-rails'
 end
