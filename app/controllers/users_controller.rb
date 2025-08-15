@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :authorize_request, only: [:create]
+  skip_before_action :require_login, only: [:create]
   def create
     user = AppUser.new(user_params)
     if user.save
