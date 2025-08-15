@@ -11,6 +11,7 @@ services:
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
     ports:
       - "5433:5432"
   demo-web:
@@ -23,6 +24,7 @@ services:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - RAILS_MASTER_KEY=${RAILS_MASTER_KEY}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
     volumes:
       - app-storage:/rails/storage
     depends_on:
