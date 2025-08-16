@@ -1,5 +1,14 @@
 class UsersController < ApplicationController
+  # Pula a verificação de login apenas para a rota de criação de usuário
   skip_before_action :login_request, only: [:create]
+
+def show
+  user = AppUser.find(params[:id])
+  render json: user
+rescue ActiveRecord::RecordNotFound
+  render json: { error: "Usuário não encontrado." }, status: :not_found
+end
+  
   def create
     user = AppUser.new(user_params)
     if user.save

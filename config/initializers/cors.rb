@@ -1,16 +1,15 @@
-# Be sure to restart your server when you modify this file.
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    # Defina a origem do seu frontend.
+    # Se estiver usando localhost, use o endereço do seu servidor de desenvolvimento.
+    # Exemplo: 'http://localhost:5173'
+    # Se quiser permitir qualquer origem (não recomendado em produção), use '*'
+    origins 'http://localhost:5173'
 
-# Avoid CORS issues when API is called from the frontend app.
-# Handle Cross-Origin Resource Sharing (CORS) in order to accept cross-origin Ajax requests.
-
-# Read more: https://github.com/cyu/rack-cors
-
-# Rails.application.config.middleware.insert_before 0, Rack::Cors do
-#   allow do
-#     origins "example.com"
-#
-#     resource "*",
-#       headers: :any,
-#       methods: [:get, :post, :put, :patch, :delete, :options, :head]
-#   end
-# end
+    # Defina quais métodos HTTP são permitidos.
+    # O `options` é crucial para as requisições de "preflight".
+    resource '*',
+      headers: :any,
+      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+  end
+end
