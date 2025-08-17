@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       # Gera o token JWT com o ID do usuário
       token = JsonWebToken.encode(user_id: user.id)
-      render json: { message: "Login realizado com sucesso", token: token }, status: :ok
+      render json: { message: "Login realizado com sucesso", token: token, user_id: user.id }, status: :ok
     else
       render json: { error: "Credenciais inválidas" }, status: :unauthorized
     end
