@@ -18,8 +18,6 @@ Rails.application.routes.draw do
   
   resources :users, only: [:show]
 
-  # Lotes
-  resources :lots
    # Medicamentos
   resources :medicines
 
@@ -33,6 +31,11 @@ Rails.application.routes.draw do
     resources :applications, only: [:index, :create, :update, :destroy]
     resources :animal_diets, only: [:index, :create, :update, :destroy]
   end
+
+# Vínculos entre vendas e animais
+resources :sale_animals
+
+
 
   # Vendas
   resources :sales do

@@ -1,2 +1,0 @@
-class Lot < ApplicationRecord
-end
