@@ -44,6 +44,6 @@ class SaleAnimalsController < ApplicationController
   end
 
   def sale_animal_params
-    params.require(:sale_animal).permit(:sale_id, :animal_id)
+    params.require(:sale_animal).permit(:id_sale, :id_animal)
   end
 end
